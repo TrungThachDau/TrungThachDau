@@ -1,4 +1,5 @@
 - 👋 Hi, I’m @TrungThachDau
+- 🌏 I come from Saigon, Vietnam
 - 👀 I’m interested in music
 - 🌱 I’m currently learning English
 - 💞️ I’m listening Sơn Tùng M-TP music
