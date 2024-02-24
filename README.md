@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @TrungThachDau
 - 🌏 I come from Saigon, Vietnam
-- 🧑‍🎓 I'm studying at Ho Chi Minh city University of Industry and Trade(HUIT)
+- 🧑‍🎓 I'm studying at Ho Chi Minh city University of Industry and Trade(HUIT) aka HCMC University of Food Industry (HUFI)
 - 📫 Contact me at 2001206954@hufi.edu.vn
 
  <!---
