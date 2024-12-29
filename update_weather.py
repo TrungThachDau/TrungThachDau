@@ -26,7 +26,7 @@ if response.status_code == 200:
     # Tìm và cập nhật phần thời tiết trong README
     for idx, line in enumerate(content):
         if line.startswith("<!-- WEATHER -->"):
-            content[idx + 1] = f"Saigon, Vietnam: {weather_description} - {temperature}°C - {humidity}"
+            content[idx + 1] = f"- 📍 Saigon, Vietnam: {weather_description} - {temperature}°C \n"
             break
 
     # Lưu lại nội dung đã cập nhật
