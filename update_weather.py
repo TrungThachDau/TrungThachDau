@@ -1,9 +1,9 @@
 import requests
 
 # Thông tin API và thành phố
-API_KEY = "your_openweather_api_key"  # Thay bằng API key của bạn
-CITY = "Ho Chi Minh City"  # Thành phố
-URL = f"http://api.openweathermap.org/data/2.5/weather?q=Saigon&appid=daf507f48231467bd52c81ef9d56d9e1&units=metric"
+API_KEY = "daf507f48231467bd52c81ef9d56d9e1"  # Thay bằng API key của bạn
+CITY = "Saigon"  # Thành phố
+URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 
 def get_weather():
     response = requests.get(URL)
