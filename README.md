@@ -1,8 +1,7 @@
 <h1 align="center">Hi 👋, I'm Nguyen Quang Trung</h1>
 <h3 align="center">Software Engineer</h3>
 <!-- WEATHER -->
-**Thời tiết tại Sài Gòn:**
-- Trạng thái: Clear sky
+Saigon, Vietnam: Clear sky - 30.01°C - 54- Trạng thái: Clear sky
 - Nhiệt độ: 30.01°C
 - Độ ẩm: 58%
 - Tốc độ gió: 2.06 m/s
