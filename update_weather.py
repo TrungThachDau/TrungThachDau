@@ -1,32 +1,40 @@
 import requests
 
-# Thông tin API và thành phố
+# Thông tin API
 API_KEY = "daf507f48231467bd52c81ef9d56d9e1"  # Thay bằng API key của bạn
-CITY = "Saigon"  # Thành phố
-URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
+LAT = 10.8231  # Vĩ độ của Sài Gòn
+LON = 106.6297  # Kinh độ của Sài Gòn
+URL = f"https://api.openweathermap.org/data/2.5/weather?lat={LAT}&lon={LON}&appid={API_KEY}&units=metric"
 
-def get_weather():
-    response = requests.get(URL)
-    if response.status_code == 200:
-        data = response.json()
-        weather = data['weather'][0]['description'].capitalize()
-        temp = data['main']['temp']
-        return f"### Thời tiết tại Sài Gòn: {weather}, {temp}°C"
-    else:
-        return "### Không thể lấy thông tin thời tiết."
+# Gửi yêu cầu HTTP tới API
+response = requests.get(URL)
 
-def update_readme():
-    weather_info = get_weather()
+# Kiểm tra mã trạng thái
+if response.status_code == 200:
+    data = response.json()
+
+    # Lấy các thông tin cần thiết từ dữ liệu trả về
+    weather_description = data["weather"][0]["description"].capitalize()
+    temperature = data["main"]["temp"]
+    humidity = data["main"]["humidity"]
+    wind_speed = data["wind"]["speed"]
     
-    with open("README.md", "r") as file:
+    # Cập nhật nội dung README.md
+    with open('README.md', 'r') as file:
         content = file.readlines()
-    
-    with open("README.md", "w") as file:
-        for line in content:
-            if line.startswith("### Thời tiết tại"):
-                file.write(weather_info + "\n")
-            else:
-                file.write(line)
 
-if __name__ == "__main__":
-    update_readme()
+    # Tìm và cập nhật phần thời tiết trong README
+    for idx, line in enumerate(content):
+        if line.startswith("<!-- WEATHER -->"):
+            content[idx + 1] = f"**Thời tiết tại Sài Gòn:**\n"
+            content[idx + 2] = f"- Trạng thái: {weather_description}\n"
+            content[idx + 3] = f"- Nhiệt độ: {temperature}°C\n"
+            content[idx + 4] = f"- Độ ẩm: {humidity}%\n"
+            content[idx + 5] = f"- Tốc độ gió: {wind_speed} m/s\n"
+            break
+
+    # Lưu lại nội dung đã cập nhật
+    with open('README.md', 'w') as file:
+        file.writelines(content)
+else:
+    print("Không thể lấy dữ liệu thời tiết.")
