@@ -1,4 +1,4 @@
-
+![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=31whquxl7icc46cjysp7tos4x7ae)
 <h1 align="center">Hi 👋, I'm Nguyen Quang Trung</h1>
 <h3 align="center">Software Engineer</h3>
 
