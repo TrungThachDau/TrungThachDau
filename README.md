@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Nguyen Quang Trung</h1>
 <h3 align="center">from Vietnam</h3>
 <!-- WEATHER -->
-- 📫 How to reach me **qtrung1702@outlook.com**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/trungthachdau" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="trungthachdau" height="30" width="40" /></a>
+**Thời tiết tại Sài Gòn:**
+- Trạng thái: Clear sky
+- Nhiệt độ: 30.03°C
+- Độ ẩm: 58%
+- Tốc độ gió: 2.06 m/s
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
