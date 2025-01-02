@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Nguyen Quang Trung</h1>
 <h3 align="center">Software Engineer</h3>
 <!-- WEATHER -->
-- 📍 Saigon, Vietnam: Broken clouds - 28.01°C 
+- 📍 Saigon, Vietnam: Light rain - 28.01°C 
 </p>
 - 📫 How to reach me qtrung1702@outlook.com
 <h3 align="left">Connect with me:</h3>
