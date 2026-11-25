@@ -11,5 +11,5 @@
 
 <h3 align="left">Top Languages:</h3>
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TrungThachDau&layout=donut&langs_count=6&hide=html,css&theme=tokyonight" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TrungThachDau&layout=compact&langs_count=8&hide=html,css&theme=transparent" alt="Top Languages" />
 </p>
